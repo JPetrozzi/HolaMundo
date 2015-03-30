@@ -7,7 +7,7 @@ public class DataAdapter
 {
 	String DB = "holamundo";
 	String userDB = "root";
-	String passDB = "";
+	String passDB = "petrozzi";
 	String driver = "com.mysql.jdbc.Driver";
 	String urlDB = "jdbc:mysql://localhost/"+DB;
 	Connection conn = null;

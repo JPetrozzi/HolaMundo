@@ -10,26 +10,26 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
-				<h1>Hola Mundo!</h1>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			<div class="col-md-7">
+				<div class="jumbotron">
+					<h1>Hola Mundo!</h1>
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus veniam libero autem ab totam animi eos? Quisquam ullam consectetur temporibus. Odio nam quasi dicta eum quibusdam porro expedita hic voluptate!</p>
+					<p><a class="btn btn-lg btn-success" href="registro.jsp">Crear Cuenta</a></p>
+				</div>
 			</div>
-			<div class="col-md-3">
-				<h1>Hola Mundo!</h1>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			</div>
-			<div class="col-md-3">
-				<h1>Hola Mundo!</h1>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			</div>
-			<div class="col-md-3">
-				<h1>Hola Mundo!</h1>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<p><a href="registro.jsp">¡Click aquí para registrarse!</a></p>
+			<div class="col-md-5">
+				<div class="jumbotron">
+					<form action="RegistrarUsuario" method="post" class="form-singin">
+						<h2 class="form-singin-heading">Si ya tenes cuenta...</h2>
+						<input type="text" name="email" class="form-control" placeholder="Email here"/>
+						<input type="password" name="pass" class="form-control" placeholder="Password here"/>				
+						<br>
+						<input type="submit" value="Ingresar" class="btn btn-lg btn-primary btn-block">
+					</form>
+					<%
+						//alert here
+					%>
+				</div>
 			</div>
 		</div>
 	</div>

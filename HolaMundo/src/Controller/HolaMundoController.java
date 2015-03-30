@@ -11,7 +11,7 @@ public class HolaMundoController
 	{
 		boolean rta;
 		ua = new UsuarioAdapter();
-		if(ua.isEmailValid(email))
+		if(ua.isValidEmail(email))
 		{
 			Usuario u  = new Usuario();
 			u.setEmail(email);

@@ -30,7 +30,7 @@ public class RegistrarUsuario extends HttpServlet
 	{
 		HolaMundoController hmc = new HolaMundoController();
 		String email = request.getParameter("email");
-		String pass = request.getParameter("pass1");
+		String pass = request.getParameter("pass");
 		String nom = request.getParameter("nombre");
 		
 		if(hmc.RegistrarUsuario(email, pass, nom))
@@ -39,7 +39,7 @@ public class RegistrarUsuario extends HttpServlet
 		}
 		else
 		{
-			response.sendRedirect("registro.jsp?msg=error");
+			response.sendRedirect("registro.jsp?error");
 		}
 	}
 

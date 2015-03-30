@@ -39,7 +39,7 @@ public class UsuarioAdapter
 		}
 	}
 	
-	public boolean isEmailValid(String email)
+	public boolean isValidEmail(String email)
 	{
 		boolean isValid = false;
 		DataAdapter da = new DataAdapter();
